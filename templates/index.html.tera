@@ -1,0 +1,14 @@
+{% extends "base" %}
+
+{% block title %}
+uwupaste
+{% endblock title %}
+
+{% block content %}
+<section>
+    <article>
+        <h2>Sorry... <span style="font-family:sans-serif;">¯\_(ツ)_/¯</span></h2>
+        <p>This service is closed to the public. Contact an administrator for access.</p>
+    </article>
+</section>
+{% endblock content %}
