@@ -8,7 +8,8 @@ pub use model::*;
 pub mod schema;
 
 pub fn insert_paste(paste: &Paste, conn: &PgConnection) -> anyhow::Result<()> {
-    diesel::insert_into(schema::paste::table)
+    use schema::paste;
+    diesel::insert_into(paste::table)
         .values(paste)
         .execute(conn)?;
     Ok(())
