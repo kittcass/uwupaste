@@ -1,2 +1,0 @@
-[global.databases]
-uwupaste = { url = "database.db" }
